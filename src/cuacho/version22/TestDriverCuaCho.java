@@ -14,9 +14,7 @@ import jdk.swing.interop.SwingInterOpUtils;
 
 public class TestDriverCuaCho {
 	public static void main(String[] args) {
-
 		CuaCho cua = new CuaCho();
-		DieuKhien dk = new DieuKhien();
 		BarkRecognizer bark = new BarkRecognizer(cua);
 		System.out.println("Fido sủa để đi ra ngoài");
 		bark.regcognize("gâu gâu");
@@ -24,13 +22,13 @@ public class TestDriverCuaCho {
 		System.out.println("Fido tác nghiệp XYZ ...");
 		cua.auto();
 		System.out.println("Fido sủa để vào nhà");
-		bark.regcognize("gâu gâu");
+		bark.regcognize("gâu gâu1");
 		System.out.println("Fido đi vào nhà");
 		cua.auto();
+
 		/*
 		 * try { audio(); } catch (UnsupportedAudioFileException | IOException |
-		 * LineUnavailableException e) { // TODO Auto-generated catch block
-		 * e.printStackTrace(); }
+		 * LineUnavailableException e) { e.printStackTrace(); }
 		 */
 
 	}
